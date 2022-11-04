@@ -293,6 +293,8 @@ img {
 }
 
 .features-list .thumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: var(--second-bg-color);
   border-radius: 4px;
   text-align: center;
