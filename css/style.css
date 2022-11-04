@@ -84,14 +84,14 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 2px solid green;*/
 }
-/*
-.container-hero {
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
+.page-header {
+  background-color: var(--primary-bg-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-line-color);
+}
 /****** Логотип у хедері******/
 .webh-logo {
   color: var(--accent-text-color);
@@ -106,19 +106,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.page-header {
-  background-color: var(--primary-bg-color);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-line-color);
-}
 
+/*Навігація по сайту */
 .main-nav {
   display: flex;
   align-items: center;
 }
-/***** Навігація по сайту ******/
-
 .site-nav {
   padding: 0;
   margin: 0;
@@ -127,16 +120,9 @@ img {
   margin-left: 93px;
 }
 
-/*
-.site-nav .item:not(:last-child) {
-  box-sizing: border-box;
-  margin-right: 50px;
-  outline: 1px solid red;
-}*/
 .site-nav .item + .item {
   margin-left: 50px;
 }
-
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -147,17 +133,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-/*
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-text-color);
-}*/
-
-/* в навигации текущаяя страница имеет цвет акцента
-.site-nav .link.current {
-  color: var(--accent-text-color);
-}*/
-/****** Контакти у хедері ******/
+/* Контакти у хедері e-mail, tel */
 
 .contacts-nav {
   display: flex;
