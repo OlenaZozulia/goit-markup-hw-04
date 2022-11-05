@@ -165,10 +165,12 @@ img {
   color: var(--second-text-color);
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   color: var(--accent-text-color);
 }
-.link:hover .contacts-nav-icon {
+.link:hover .contacts-nav-icon,
+.link:focus .contacts-nav-icon {
   fill: var(--accent-text-color);
 }
 
@@ -293,11 +295,12 @@ img {
 }
 
 .features-list .thumb {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--second-bg-color);
+  height: 120px;
   border-radius: 4px;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -379,10 +382,12 @@ img {
   height: 20px;
   fill: var(--icon-color);
 }
-.team-icon-link:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
   background-color: var(--accent-text-color);
 }
-.team-icon-link:hover .team-item-icon {
+.team-icon-link:hover .team-item-icon,
+.team-icon-link:focus .team-item-icon {
   fill: var(--primary-white-color);
 }
 
@@ -519,6 +524,11 @@ img {
   color: var(--primary-white-color);
 }
 
+.container.footer-info {
+  display: flex;
+  align-items: baseline;
+}
+
 .address-footer {
   display: block;
   margin-bottom: 9px;
@@ -538,27 +548,23 @@ img {
   color: var(--second-white-color);
 }
 
-.container.footer-info {
-  display: flex;
-}
-
 .footer-icon {
   margin-left: 70px;
 }
 
 .footer-icon .title {
+  margin-bottom: 20px;
+  font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(16.41 / 14);
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .footer-list-icon.list {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 .footer-icon-link {
@@ -577,9 +583,11 @@ img {
   height: 20px;
   fill: var(--primary-white-color);
 }
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: var(--accent-text-color);
 }
-.footer-icon-link:hover .team-item-icon {
+.footer-icon-link:hover .team-item-icon,
+.footer-icon-link:focus .team-item-icon {
   fill: var(--primary-white-color);
 }
